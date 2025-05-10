@@ -30,6 +30,10 @@ jobs:
           npm install
           npm run build
           
+      - name: List build output
+        run: |
+          ls -la templates/jsx/dist/
+          
       - name: Setup Pages
         uses: actions/configure-pages@v4
         
